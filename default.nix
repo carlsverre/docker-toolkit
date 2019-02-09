@@ -3,8 +3,8 @@ let
     pkgs-src = nixpkgs.fetchFromGitHub {
         owner = "nixos";
         repo = "nixpkgs";
-        rev = "120b013e0c082d58a5712cde0a7371ae8b25a601";
-        sha256 = "0hk4y2vkgm1qadpsm4b0q1vxq889jhxzjx3ragybrlwwg54mzp4f";
+        rev = "e50e323a2c4257bf0c505ec6f61cd5d1fd39b106";
+        sha256 = "0z6hpjvlp2g4zkc82w28hgj40dfpncxy1w1f4fxvxxwplx3crspp";
     };
     pkgs = import pkgs-src {};
 in
@@ -24,6 +24,8 @@ in
       wget
       dnsutils
       traceroute
+      tcpdump
+      iproute
     ];
 
     config = {
